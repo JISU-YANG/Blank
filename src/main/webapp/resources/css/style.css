@@ -1,0 +1,285 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@700&display=swap');
+
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+}
+header{
+	position: fixed;
+	top:0;
+	left:0;
+	width:90%;
+	height: 60px;
+	padding: 0 5%;
+	padding-top:10px;
+	border-bottom:1px solid #e2e2e2;
+	background: #fff;
+}
+
+body{
+	position:fixed;
+	width: 100%;
+	height: 100%;
+	padding:0px;
+	margin:0px;
+}
+
+#chatInfo{
+	float:left;
+	width:60%;
+	height: 30px;
+	padding: 15px 0; 
+}
+
+#chatInfo div{
+	display:inline-block;
+}
+
+#chatInfoImg{
+	position: relative;
+	width:30px;
+	height: 30px;
+	border-radius: 40px;
+}
+
+#chatInfoImg>img{
+	position:absolute;
+	top:-17px;
+	left:-15px;
+	width: 60px;
+	height: 60px;
+	border-radius: 100px;
+}
+#chatInfoTitle{
+	font-size: 16px;
+	line-height: 28px;
+	vertical-align: top;
+	margin-left:10px;
+	color:#3DBCD9;
+}
+
+#chatBadge{
+	float:right;
+	width:40%;
+	height: 60px;
+	padding: 20px 0; 
+}
+
+.chatBadgeImg{
+	display:inline-block;
+	position:relative;
+	width:20px;
+	height: 20px;
+	border-radius: 20px;
+	margin-right:6px;
+}
+.chatBadgeImg div{
+	position:absolute;
+	top:-1px;
+	right:-1px;
+	width: 4px;
+	height: 4px;
+	background: #63E4F2;
+	border-radius: 6px;
+	display: none;
+}
+
+.chatBadgeImg>img{
+	position:absolute;
+	top:-11px;
+	left:-10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+}
+#chatBadge>div{
+	display:inline-block;
+}
+#chatSetting{
+	float:right;
+}
+#chatSetting img{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+footer{
+	position: fixed;
+	bottom:0;
+	left:0;
+	width:100%;
+	height: 130px;
+	border-top:1px solid #e2e2e2;
+}
+
+#tipArea{
+	padding: 10px 5%;
+	width: 100%;
+	height: 30px;
+}
+#tipArea div{
+	display: inline-block;
+	margin-top:10px;
+	margin-right:12px;
+}
+#tipArea>div img{
+	width: 20px;
+	height: 20px;
+	opacity: 0.5;
+}
+#inputArea{
+	width: 90%;
+	height: 70px;
+	padding: 0 5%;
+}
+#inputArea>div{
+	display: inline-block;
+}
+#inputBox{
+	width: 85%;
+}
+#inputBox input{
+	border:none;
+	width:100%;
+	height: 30px;
+	color: #777;
+	background: none;
+}
+#inputBox input:focus{
+	outline: none;
+	padding:2px;
+	caret-color: #3DBCD9;
+}
+#inputBox input::placeholder{
+	padding-left:10px;
+}
+#btnBox{
+	float: right;
+	width: 15%;
+}
+#btnBox>button{
+	width: 100%;
+	height: 36px;
+	border:none;
+	border-radius: 2px;
+	background: #3DBCD9;
+	color:#fff;
+	font-size: 12px;
+	opacity: 0.5;
+}
+#btnBox>button:focus{
+	outline:none;
+}
+#container{
+	overflow-y:scroll;
+	width: 90%;
+	height: calc(100% - 221px);
+	margin: 71px 0 130px 0;
+	padding:10px 5%;
+}
+.leftChat{
+	width:100%;
+	margin-bottom:20px;
+}
+.leftChat>div{
+	display: inline-block;
+	max-width:70%;
+}
+.leftProfileArea{
+	width:44px;
+	vertical-align: top;
+}
+.leftProfileBox img{
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+.leftInfoBox>div{
+	display: inline-block;
+}
+.leftInfoName{
+	font-size:13px;
+	padding-top:15px;
+	color: #4b4b4b;
+}
+.leftInfoTime{
+	margin-left:6px;
+	font-size:9px;
+	padding-top:18px;
+	vertical-align: top;
+	color: #cbcbcb;
+}
+.leftInfoText{
+	margin-top:6px;
+	padding: 10px 25px 15px 25px;
+	background: #f0f0f0;
+	border-radius: 0 8px 8px 8px;
+}
+.leftInfoText>span{
+	font-size: 11px;
+	color: #5b5b5b; 
+}
+.rightChat{
+	position:relative;
+	width:100%;
+	margin-bottom:20px;
+	text-align: right;
+}
+.rightChat>div{
+	display: inline-block;
+	max-width:70%;
+}
+.rightProfileArea{
+	width:44px;
+	vertical-align: top;
+}
+.rightProfileBox img{
+	position:absolute;
+	right:2px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+}
+.rightInfoBox>div{
+	display: inline-block;
+}
+.rightInfoName{
+	font-size:13px;
+	padding-top:15px;
+	color: #4b4b4b;
+}
+.rightInfoTime{
+	margin-right:6px;
+	font-size:9px;
+	padding-top:18px;
+	vertical-align: top;
+	color: #cbcbcb;
+}
+.rightInfoText{
+	text-align: center;
+	margin-top:6px;
+	padding: 10px 25px 15px 25px;
+	background: #3DBCD9;
+	border-radius: 8px 0 8px 8px;
+}
+.rightInfoText>span{
+	font-size: 11px;
+	color: #fff; 
+}
+#toolTip{
+	position: fixed;
+	background: #fff;
+	padding:2px 10px 5px 10px;
+	font-size:11px;
+	color:#3DBCD9;
+	border-radius:4px;
+	z-index:100;
+	text-align: center;
+	border:1px solid #e2e2e2;	
+}
+.icon{
+	opacity:0.5;
+	cursor: pointer;
+}
